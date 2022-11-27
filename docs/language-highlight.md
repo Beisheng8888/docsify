@@ -12,6 +12,7 @@ Support for [additional languages](https://prismjs.com/#supported-languages) is 
 ```html
 <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-bash.min.js"></script>
 <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-php.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-java.min.js"></script>
 ```
 
 To enable syntax highlighting, wrap each code block in triple backticks with the [language](https://prismjs.com/#supported-languages) specified on the first line:
@@ -27,7 +28,7 @@ echo "hello"
 ```
 
 ```php
-function getAdder(int $x): int 
+function getAdder(int $x): int
 {
     return 123;
 }
@@ -46,7 +47,7 @@ echo "hello"
 ```
 
 ```php
-function getAdder(int $x): int 
+function getAdder(int $x): int
 {
     return 123;
 }

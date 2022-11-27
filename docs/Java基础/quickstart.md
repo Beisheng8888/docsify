@@ -1,4 +1,4 @@
-# Quick start
+# 快速开始
 
 It is recommended to install `docsify-cli` globally, which helps initializing and previewing the website locally.
 
@@ -22,7 +22,7 @@ After the `init` is complete, you can see the file list in the `./docs` subdirec
 - `README.md` as the home page
 - `.nojekyll` prevents GitHub Pages from ignoring files that begin with an underscore
 
-You can easily update the documentation in `./docs/README.md`, of course you can add [more pages](more-pages.md).
+You can easily update the documentation in `./docs/README.md`, of course you can add [more pages](../more-pages.md).
 
 ## Preview your site
 
@@ -121,4 +121,4 @@ You should set the `data-app` attribute if you changed `el`:
 </script>
 ```
 
-Compare [el configuration](configuration.md#el).
+Compare [el configuration](../configuration.md#el).

@@ -1,7 +1,9 @@
-- Getting started
+- JavaSE
 
-  - [Quick start](quickstart.md)
-  - [Writing more pages](more-pages.md)
+  - [Git](JavaSE/Git.md)
+  - [继承](JavaSE/继承.md)
+  - [Git](Java基础/quickstart.md)
+  - [123](more-pages.md)
   - [Custom navbar](custom-navbar.md)
   - [Cover page](cover.md)
 

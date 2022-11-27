@@ -1,12 +1,12 @@
 ![logo](_media/icon.svg)
 
-# docsify <small>4.13.0</small>
+# 北省的文档 <small>0.0.1</small>
 
-> A magical documentation site generator.
+> 一个神器的文档站点生成器
 
-- Simple and lightweight
-- No statically built html files
-- Multiple themes
+- 简单轻便
+- 没有静态构建的 html 文件
+- 多主题
 
-[GitHub](https://github.com/docsifyjs/docsify/)
-[Getting Started](#docsify)
+[博客](http://anqi520.com)
+[快速开始](#readme)
