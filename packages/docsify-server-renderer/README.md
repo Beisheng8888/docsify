@@ -33,7 +33,7 @@ renderer.renderToString(url)
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>docsify</title>
+  <title>北省的Java文档</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/themes/vue.css" title="vue">
 </head>

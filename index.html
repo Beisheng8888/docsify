@@ -2,16 +2,15 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8"/>
-  <title>docsify</title>
+  <title>北省的Java文档</title>
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
   <meta name="viewport" content="width=device-width,initial-scale=1"/>
   <!--  跟换主题  -->
   <!-- Theme: Simple -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple.css" disabled>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple.css" title="theme-simple" disabled>
   <!-- Theme: Simple Dark -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple-dark.css"
-        disabled>
-  <link rel="stylesheet" href="/themes/vue.css" title="vue" disabled/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple-dark.css" title="theme-simple-dark" disabled>
+  <link rel="stylesheet" href="/themes/vue.css" title="vue" />
   <link rel="stylesheet" href="/themes/dark.css" title="dark" disabled/>
   <link rel="stylesheet" href="/themes/buble.css" title="buble" disabled/>
   <link rel="stylesheet" href="/themes/pure.css" title="pure" disabled/>
@@ -46,14 +45,9 @@
       '.*?/changelog':
         'https://raw.githubusercontent.com/docsifyjs/docsify/master/CHANGELOG.md',
       '/.*/_navbar.md': '/_navbar.md',
-      '/es/(.*)':
+      '//(.*)':
         'https://raw.githubusercontent.com/docsifyjs/docs-es/master/$1',
-      '/de-de/(.*)':
-        'https://raw.githubusercontent.com/docsifyjs/docs-de/master/$1',
-      '/ru-ru/(.*)':
-        'https://raw.githubusercontent.com/docsifyjs/docs-ru/master/$1',
-      '/zh-cn/(.*)':
-        'https://cdn.jsdelivr.net/gh/docsifyjs/docs-zh@master/$1',
+
     },
     auto2top: true,
     basePath: '/docs/',
@@ -66,29 +60,17 @@
     subMaxLevel: 2,
     name: 'docsify',
     nameLink: {
-      '/es/': '#/es/',
-      '/de-de/': '#/de-de/',
-      '/ru-ru/': '#/ru-ru/',
-      '/zh-cn/': '#/zh-cn/',
       '/': '#/',
     },
     search: {
       noData: {
-        '/es/': '¡No hay resultados!',
-        '/de-de/': 'Keine Ergebnisse!',
-        '/ru-ru/': 'Никаких результатов!',
-        '/zh-cn/': '没有结果!',
-        '/': 'No results!',
+        '/': '没有结果',
       },
       paths: 'auto',
       placeholder: {
-        '/es/': 'Buscar',
-        '/de-de/': 'Suche',
-        '/ru-ru/': 'Поиск',
-        '/zh-cn/': '搜索',
-        '/': 'Search',
+        '/': '搜索',
       },
-      pathNamespaces: ['/es', '/de-de', '/ru-ru', '/zh-cn'],
+      pathNamespaces: ['/'],
     },
     plugins: [
       DocsifyCarbon.create('CEBI6KQE', 'docsifyjsorg'),

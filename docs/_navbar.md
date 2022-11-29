@@ -1,6 +1,3 @@
-- Translations
-  - [:cn: 简体中文](/)
-  - [:uk: English](/uk/)
-  - [:de: Deutsch](/de-de/)
-  - [:es: Español](/es/)
-  - [:ru: Русский](/ru-ru/)
+[//]: # (- 主题)
+
+[//]: # (  - [:cn: 简体中文]&#40;/&#41;)
