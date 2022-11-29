@@ -1,6 +1,6 @@
 ![logo](_media/icon.svg)
 
-# 北省的文档 <small>0.0.1</small>
+# 北省的文档 <small>4.13.0</small>
 
 > 一个神器的文档站点生成器
 
