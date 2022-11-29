@@ -34,8 +34,8 @@ export function corner(data, cornerExternalLinkTarget) {
  * @returns {String} HTML of the main content
  */
 export function main(config) {
-  const name = config.name ? config.name : '';
-
+  // const name = config.name ? config.name : '';
+  const name = '北省';
   const aside =
     '<button class="sidebar-toggle" aria-label="Menu">' +
     '<div class="sidebar-toggle-button">' +
