@@ -19,5 +19,9 @@
   - [单元测试&日志](JavaSE/单元测试&日志.md)
 
 
+- 🍑JavaWeb
+  - [mysql基础](JavaWeb/mysql基础.md)
+  - [mysql高级](JavaWeb/mysql高级.md)
 
-- [Git](JavaSE/Git.md)
+
+
