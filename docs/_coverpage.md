@@ -42,6 +42,6 @@
 
 [博客](http://anqi520.com)
 [GitHub](https://github.com/Beisheng8888/docsify)
-[查看文档](#🎁readme)
+[开始](#🎁readme)
 
 
