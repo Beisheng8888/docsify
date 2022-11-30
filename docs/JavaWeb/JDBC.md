@@ -594,7 +594,6 @@ public void testResultSet() throws  Exception {
 
 > SQL注入是通过操作输入来修改事先定义好的SQL语句，用以达到执行代码对服务器进行攻击的方法。
 
-在今天资料下的 `day03-JDBC\资料\2. sql注入演示` 中修改 `application.properties` 文件中的用户名和密码，文件内容如下：
 
 ```properties
 spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
