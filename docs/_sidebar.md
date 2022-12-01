@@ -58,3 +58,4 @@
   - [Linux-02](必会工具/Linux-02.md)
   - [Redis](必会工具/Redis.md)
   - [Freemarker&MiniO](必会工具/freemarker&Minio.md)
+  - [Kafka](必会工具/Kafka.md)
