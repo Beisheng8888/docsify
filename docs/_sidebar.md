@@ -25,5 +25,6 @@
   - [JDBC](JavaWeb/JDBC.md)
   - [Maven&MyBatis](JavaWeb/Maven&MyBatis.md)
   - [HTML&CSS](JavaWeb/HTML&CSS.md)
+  - [JavaScript](JavaWeb/JavaScript.md)
 
 
