@@ -47,7 +47,5 @@
   - [Docker实用篇](基础微服务/Docker.md)
   - [RabbitMQ](基础微服务/RabbitMQ.md)
 
-
-
-
 - 🍜高级微服务
+  - [Sentinel](高级微服务/Sentinel.md)
