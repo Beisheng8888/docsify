@@ -4,7 +4,7 @@
 
 ## 📚简介
 
-初心是上传 从Java基础、JavaSE、JavaWeb、框架部分。
+这里记录了 从Java基础、JavaSE、JavaWeb、基础框架、微服务框架的笔记。
 
 ## 🍑这里也可以切换主题
 
