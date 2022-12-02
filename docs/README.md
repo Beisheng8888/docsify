@@ -8,7 +8,7 @@
 
 ## 🍑这里也可以切换主题
 
-<div class="demo-theme-preview">
+<div class="demo-theme-preview" >
   <a data-theme="theme-simple">simple</a>
   <a data-theme="theme-simple-dark">simple-dark</a>
   <a data-theme="vue">vue</a>
@@ -16,6 +16,7 @@
   <a data-theme="dark">dark</a>
   <a data-theme="pure">pure</a>
 </div>
+
 
 <style>
   .demo-theme-preview a {
