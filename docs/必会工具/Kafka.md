@@ -1,7 +1,7 @@
-## kafka
+## 1.kafka
 
 
-### 2)kafka概述
+## 2).kafka概述
 
 消息中间件对比
 
@@ -39,7 +39,7 @@ kafka介绍-名词解释
 
 - broker：已发布的消息保存在一组服务器中，称之为Kafka集群。集群中的每一个服务器都是一个代理（Broker）。 消费者可以订阅一个或多个主题（topic），并从Broker拉数据，从而消费这些已发布的消息。
 
-### 3)kafka安装配置
+## 3).kafka安装配置
 
 Kafka对于zookeeper是强依赖，保存kafka相关的节点数据，所以安装Kafka之前必须先安装zookeeper
 
@@ -77,7 +77,7 @@ docker run -d --name kafka \
 --net=host wurstmeister/kafka:2.12-2.3.1
 ```
 
-### 4)kafka入门
+## 4).kafka入门
 
 ![image-20210525181412230](assets\image-20210525181412230.png)
 
@@ -199,9 +199,9 @@ public class ConsumerQuickStart {
 - 生产者发送消息，多个消费者订阅同一个主题，只能有一个消费者收到消息（一对一）
 - 生产者发送消息，多个消费者订阅同一个主题，所有消费者都能收到消息（一对多）
 
-### 5)kafka高可用设计
+## 5)kafka高可用设计
 
-#### 5.1)集群
+### 5.1)集群
 
 ![image-20210530223101568](assets\image-20210530223101568.png)
 
@@ -209,7 +209,7 @@ public class ConsumerQuickStart {
 
 - 这样如果集群中某一台机器宕机，其他机器上的 Broker 也依然能够对外提供服务。这其实就是 Kafka 提供高可用的手段之一
 
-#### 5.2)备份机制(Replication）
+### 5.2)备份机制(Replication）
 
 ![image-20210530223218580](assets\image-20210530223218580.png)
 
@@ -243,9 +243,9 @@ ISR（in-sync replica）需要同步复制保存的follower
 
 第二：选择第一个活过来的Replication，不一定是ISR中的，选为leader，以最快速度恢复可用性，但数据不一定完整
 
-### 6)kafka生产者详解
+## 6)kafka生产者详解
 
-#### 6.1)发送类型
+### 6.1)发送类型
 
 - 同步发送
 
@@ -273,7 +273,7 @@ producer.send(kvProducerRecord, new Callback() {
 });
 ```
 
-#### 6.2)参数详解
+### 6.2)参数详解
 
 - ack
 
@@ -326,9 +326,9 @@ prop.put(ProducerConfig.COMPRESSION_TYPE_CONFIG,"lz4");
 
 使用压缩可以降低网络传输开销和存储开销，而这往往是向 Kafka 发送消息的瓶颈所在。
 
-### 7)kafka消费者详解
+## 7)kafka消费者详解
 
-#### 7.1)消费者组
+### 7.1)消费者组
 
 ![image-20210530224706747](assets\image-20210530224706747.png)
 
@@ -340,7 +340,7 @@ prop.put(ProducerConfig.COMPRESSION_TYPE_CONFIG,"lz4");
 
   - 所有的消费者都在不同的组中，那么就完全变成了发布-订阅模型
 
-#### 7.2)消息有序性
+### 7.2)消息有序性
 
 应用场景：
 
@@ -352,7 +352,7 @@ prop.put(ProducerConfig.COMPRESSION_TYPE_CONFIG,"lz4");
 
 topic分区中消息只能由消费者组中的唯一一个消费者处理，所以消息肯定是按照先后顺序进行处理的。但是它也仅仅是保证Topic的一个分区顺序处理，不能保证跨分区的消息先后处理顺序。 所以，如果你想要顺序的处理Topic的所有消息，那就只提供一个分区。
 
-#### 7.3)提交和偏移量
+### 7.3)提交和偏移量
 
 kafka不会像其他JMS队列那样需要得到消费者的确认，消费者可以使用kafka来追踪消息在分区的位置（偏移量）
 
@@ -474,9 +474,9 @@ try {
 }
 ```
 
-### 8)springboot集成kafka
+## 8)springboot集成kafka
 
-#### 8.1)入门
+### 8.1)入门
 
 1.导入spring-kafka依赖信息
 
@@ -574,7 +574,7 @@ public class HelloListener {
 }
 ```
 
-#### 8.2)传递消息为对象
+### 8.2)传递消息为对象
 
 目前springboot整合后的kafka，因为序列化器是StringSerializer，这个时候如果需要传递对象可以有两种方式
 
