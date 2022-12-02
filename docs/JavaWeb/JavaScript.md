@@ -10,13 +10,13 @@ JavaScript 是用来控制网页行为的，它能使网页可交互；那么它
 
 * **改变页面内容**
 
-  ![img](assets/image-20210814173417834.png" )
+  ![img](assets/image-20210814173417834.png)
 
   当我点击上面左图的 `点击我` 按钮，按钮上面的文本就改为上面右图内容，这就是js 改变页面内容的功能。
 
 * **修改指定元素的属性值**
 
-  ![img](assets/image-20210814173719505.png" )
+  ![img](assets/image-20210814173719505.png)
 
   当我们点击上图的 `开灯` 按钮，效果就是上面右图效果；当我点击 `关灯` 按钮，效果就是上面左图效果。其他这个功能中有两张灯泡的图片（使用img标签进行展示），通过修改 img 标签的 src 属性值改变展示的图片来实现。
 
@@ -67,7 +67,7 @@ JavaScript 引入方式就是 HTML 和 JavaScript 的结合方式。JavaScript�
 
 **效果如下：**
 
-![img](assets/image-20210814181419691.png )
+![img](assets/image-20210814181419691.png)
 
 从结果可以看到 js 代码已经执行了。
 
@@ -217,7 +217,7 @@ js 可以通过以下方式进行内容的输出，只不过不同的语句输�
 
   上面代码通过浏览器打开，我们可以在页面上看到 `document.write(内容)` 输出的内容
 
-  ![img](assets/image-20210814190302845.png" )
+  ![img](assets/image-20210814190302845.png)
 
 * **使用 console.log() 写入浏览器控制台**
 
@@ -290,15 +290,15 @@ alert(age);
 
 运行上面代码，浏览器并没有弹框输出结果，说明这段代码是有问题的。通过 `F12` 打开开发者模式可以看到如下错误信息
 
-![img](assets/image-20210815170848426.png" )
+![img](assets/image-20210815170848426.png)
 
 而如果在代码块中定义两个同名的变量，IDEA 开发工具就直接报错了
 
-> ![img](assets/image-20210815170952829.png" )
+> ![img](assets/image-20210815170952829.png )
 
 ==ECMAScript 6 新增了 const关键字，用来声明一个只读的常量。一旦声明，常量的值就不能改变。== 通过下面的代码看一下常用的特点就可以了
 
-> ![img](assets/image-20210815171128095.png" )
+> ![img](assets/image-20210815171128095.png )
 
 我们可以看到给 PI 这个常量重新赋值时报错了。
 
@@ -358,7 +358,7 @@ JavaScript 中提供了两类数据类型：原始类型 和 引用类型。
 
   为什么打印上面的 obj 变量的数据类型，结果是object；这个官方给出了解释，下面是从官方文档截的图
 
-  ![img](assets/image-20210815173003408.png" )
+  ![img](assets/image-20210815173003408.png )
 
 * **undefined**：当声明的变量未初始化时，该变量的默认值是 undefined
 
@@ -663,17 +663,17 @@ JavaScript 提供了很多对象供使用者来使用。这些对象总共分类
 
 * 基本对象
 
-  ![img](assets/image-20210815183147297.png" )
+  ![img](assets/image-20210815183147297.png )
 
 * BOM 对象
 
-  ![img](assets/image-20210815183207660.png" )
+  ![img](assets/image-20210815183207660.png )
 
 * DOM对象
 
   DOM 中的对象就比较多了，下图只是截取部分
 
-  ![img](assets/image-20210815183225718.png" )
+  ![img](assets/image-20210815183225718.png )
 
 这小节我们先学习基本对象，而我们先学习 `Array` 数组对象和 `String` 字符串对象。
 
@@ -762,7 +762,7 @@ alert(arr3[5]); // hello
 
 Array 对象提供了很多属性，如下图是官方文档截取的
 
-![img](assets/image-20210815190319166.png" )
+![img](assets/image-20210815190319166.png )
 
 而我们只讲解 `length` 属性，该数组可以动态的获取数组的长度。而有这个属性，我们就可以遍历数组了
 
@@ -777,7 +777,7 @@ for (let i = 0; i < arr.length; i++) {
 
 Array 对象同样也提供了很多方法，如下图是官方文档截取的
 
-![img](assets/image-20210815190601340.png" )
+![img](assets/image-20210815190601340.png )
 
 而我们在课堂中只演示 `push` 函数和 `splice` 函数。
 
@@ -825,13 +825,13 @@ String对象的创建方式有两种
 
 String对象提供了很多属性，下面给大家列举了一个属性 `length` ，该属性是用于动态的获取字符串的长度
 
-![img](assets/image-20210815192504884.png" )
+![img](assets/image-20210815192504884.png )
 
 **函数：**
 
 String对象提供了很多函数（方法），下面给大家列举了两个方法。
 
-![img](assets/image-20210815192544172.png" )
+![img](assets/image-20210815192544172.png )
 
 String对象还有一个函数 `trim()` ，该方法在文档中没有体现，但是所有的浏览器都支持；它是用来去掉字符串两端的空格。
 
@@ -853,7 +853,7 @@ alert(1 + str4.trim() + 1);
 
 `trim()` 函数在以后开发中还是比较常用的，例如下图所示是登陆界面
 
-![img](assets/image-20210815193420418.png" )
+![img](assets/image-20210815193420418.png )
 
 用户在输入用户名和密码时，可能会习惯的输入一些空格，这样在我们后端程序中判断用户名和密码是否正确，结果肯定是失败。所以我们一般都会对用户输入的字符串数据进行去除前后空格的操作。
 
@@ -929,7 +929,7 @@ BOM：Browser Object Model 浏览器对象模型。也就是 JavaScript 将浏�
 
 下图是 BOM 中的各个对象和浏览器的各个组成部分的对应关系
 
-![img](assets/image-20210815194911914.png" )
+![img](assets/image-20210815194911914.png )
 
 BOM 中的 `Navigator` 对象和 `Screen` 对象基本不会使用，所以我们的课堂只对 `Window`、`History`、`Location` 对象进行讲解。
 
@@ -957,7 +957,7 @@ window 对象是 JavaScript 对浏览器的窗口进行封装的对象。
 
 `window` 对象提供了用于获取其他 BOM 组成对象的属性
 
-![img](assets/image-20210815200625592.png")
+![img](assets/image-20210815200625592.png)
 
 也就是说，我们想使用 `Location` 对象的话，就可以使用 `window` 对象获取；写成 `window.location`，而 `window.` 可以省略，简化写成 `location` 来获取 `Location` 对象。
 
@@ -965,7 +965,7 @@ window 对象是 JavaScript 对浏览器的窗口进行封装的对象。
 
 `window` 对象提供了很多函数供我们使用，而很多都不常用；下面给大家列举了一些比较常用的函数
 
-![img](assets/image-20210815201323329.png" )
+![img](assets/image-20210815201323329.png )
 
 > `setTimeout(function,毫秒值)` : 在一定的时间间隔后执行一个function，只执行一次
 > `setInterval(function,毫秒值)` :在一定的时间间隔后执行一个function，循环执行
@@ -981,11 +981,11 @@ alert(flag);
 
 下图是 `confirm()` 函数的效果。当我们点击 `确定` 按钮，`flag` 变量值记录的就是 `true` ；当我们点击 `取消` 按钮，`flag` 变量值记录的就是 `false`。
 
-![img](assets/image-20210815201600493.png" )
+![img](assets/image-20210815201600493.png )
 
 而以后我们在页面删除数据时候如下图每一条数据后都有 `删除` 按钮，有可能是用户的一些误操作，所以对于删除操作需要用户进行再次确认，此时就需要用到 `confirm()` 函数。
 
-![img](assets/image-20210815202406490.png" )
+![img](assets/image-20210815202406490.png )
 
 **定时器代码演示：**
 
@@ -1009,13 +1009,13 @@ setInterval(function (){
 
 **需求：每隔1秒，灯泡切换一次状态**
 
-![img](assets/image-20210815203345262.png" )
+![img](assets/image-20210815203345262.png )
 
 需求说明：
 
 有如下页面效果，实现定时进行开灯、关灯功能
 
-![img](assets/image-20210815203623739.png")
+![img](assets/image-20210815203623739.png)
 
 初始页面环境
 
@@ -1097,17 +1097,17 @@ History 对象是 JavaScript 对历史记录进行封装的对象。
 
 * History 对象的函数
 
-  ![img](assets/image-20210815224826535.png" )
+  ![img](assets/image-20210815224826535.png )
 
   这两个函数我们平时在访问其他的一些网站时经常使用对应的效果，如下图
 
-  ![img](assets/image-20210815225059114.png" )
+  ![img](assets/image-20210815225059114.png)
 
   当我们点击向左的箭头，就跳转到前一个访问的页面，这就是 `back()` 函数的作用；当我们点击向右的箭头，就跳转到下一个访问的页面，这就是 `forward()` 函数的作用。
 
 ### 5.3  Location对象
 
-![img](assets/image-20210815225243560.png" )
+![img](assets/image-20210815225243560.png)
 
 Location 对象是 JavaScript 对地址栏封装的对象。可以通过操作该对象，跳转到任意页面。
 
@@ -1126,7 +1126,7 @@ location.方法();
 
 Location对象提供了很对属性。以后常用的只有一个属性 `href`
 
-![img](assets/image-20210815225707580.png" )
+![img](assets/image-20210815225707580.png)
 
 **代码演示：**
 
@@ -1234,8 +1234,8 @@ HTML 中的 Element 对象可以通过 `Document` 对象获取，而 `Document` 
 <body>
     <img id="light" src="../imgs/off.gif"> <br>
 
-    <div class="cls">传智教育</div>   <br>
-    <div class="cls">黑马程序员</div> <br>
+    <div class="cls">123</div>   <br>
+    <div class="cls">456</div> <br>
 
     <input type="checkbox" name="hobby"> 电影
     <input type="checkbox" name="hobby"> 旅游
@@ -1257,7 +1257,7 @@ HTML 中的 Element 对象可以通过 `Document` 对象获取，而 `Document` 
 
    结果如下：
 
-   ![img](assets/image-20210815233232924.png" )
+   ![img](assets/image-20210815233232924.png )
 
    从弹框输出的内容，也可以看出是一个图片元素对象。
 
@@ -1308,8 +1308,8 @@ HTML 中的 `Element` 元素对象有很多，不可能全部记住，以后是�
 <body>
     <img id="light" src="../imgs/off.gif"> <br>
 
-    <div class="cls">传智教育</div>   <br>
-    <div class="cls">黑马程序员</div> <br>
+    <div class="cls">123</div>   <br>
+    <div class="cls">456</div> <br>
 
     <input type="checkbox" name="hobby"> 电影
     <input type="checkbox" name="hobby"> 旅游
@@ -1328,7 +1328,7 @@ HTML 中的 `Element` 元素对象有很多，不可能全部记住，以后是�
 
    此案例由于需要改变 `img` 标签 的图片，所以我们查询文档，下图是查看文档的流程：
 
-   ![img](assets/查看文档.png" )
+   ![img](assets/查看文档.png )
 
    代码实现：
 
@@ -1380,11 +1380,11 @@ HTML 事件是发生在 HTML 元素上的“事情”。比如：页面上的 `�
 
 事件监听是JavaScript 可以在事件被侦测到时==执行一段逻辑代码。==例如下图当我们点击 `开灯` 按钮，就需要通过 js 代码实现替换图片
 
-![img](assets/image-20210816194143246.png" )
+![img](assets/image-20210816194143246.png )
 
 再比如下图输入框，当我们输入了用户名 `光标离开` 输入框，就需要通过 js 代码对输入的内容进行校验，没通过校验就在输入框后提示 `用户名格式有误!`
 
-![img](assets/image-20210816194333252.png" )
+![img](assets/image-20210816194333252.png )
 
 ### 7.1  事件绑定
 
@@ -1467,13 +1467,13 @@ JavaScript 提供了两种事件绑定方式：
 
   如下图，当点击了输入框后，输入框就获得了焦点。而下图示例是当获取焦点后会更改输入框的背景颜色。
 
-  ![img](assets/image-20210816214900928.png" )
+  ![img](assets/image-20210816214900928.png )
 
 * `onblur  ` 失去焦点事件。
 
   如下图，当点击了输入框后，输入框就获得了焦点；再点击页面其他位置，那输入框就失去焦点了。下图示例是将输入的文本转换为大写。
 
-  ![img](assets/image-20210816215235969.png")
+  ![img](assets/image-20210816215235969.png)
 
 * `onmouseout  ` 鼠标移出事件。
 
@@ -1481,7 +1481,7 @@ JavaScript 提供了两种事件绑定方式：
 
   如下图，当鼠标移入到 苹果 图片上时，苹果图片变大；当鼠标移出 苹果图片时，苹果图片变小。
 
-  ![img](assets/image-20210816220149093.png" )
+  ![img](assets/image-20210816220149093.png )
 
 * `onsubmit  ` 表单提交事件
 
@@ -1523,7 +1523,7 @@ JavaScript 提供了两种事件绑定方式：
 
 ### 8.1  需求
 
-![img](assets/image-20210816225925955.png" )
+![img](assets/image-20210816225925955.png )
 
 有如下注册页面，对表单进行校验，如果输入的用户名、密码、手机号符合规则，则允许提交；如果不符合规则，则不允许提交。
 
@@ -1773,7 +1773,7 @@ RegExp 是正则对象。正则对象是判断指定字符串是否符合规则�
 
 如下图是百度贴吧中的帖子
 
-![img](assets/image-20210816235112754.png" )
+![img](assets/image-20210816235112754.png )
 
 我们可以通过爬虫技术去爬取该页面源代码，然后获取页面中所有的邮箱，后期我们可以给这些邮箱地址发送推广的邮件。那么问题来了，如何才能知道页面内容中哪些事邮箱地址呢？这里就可以使用正则表达式来匹配邮箱。
 

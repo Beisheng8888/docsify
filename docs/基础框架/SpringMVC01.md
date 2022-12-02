@@ -355,7 +355,7 @@ public class ServletContainersInitConfig extends AbstractAnnotationConfigDispatc
 
 #### 5.1 PostMan介绍
 
-- Postman是一款功能强大的网页调试与发送网页HTTP请求的Chrome插件。<img src="assets/image-20210804194708518.png" alt="image-20210804194708518" style="zoom:25%;" />
+- Postman是一款功能强大的网页调试与发送网页HTTP请求的Chrome插件。
 - 作用：常用于进行接口测试
 - 特征
   - 简单
@@ -928,11 +928,11 @@ public User toJsonPOJO(){
 public List<User> toJsonList(){
     System.out.println("返回json集合数据");
     User user1 = new User();
-    user1.setName("传智播客");
+    user1.setName("123");
     user1.setAge(15);
 
     User user2 = new User();
-    user2.setName("黑马程序员");
+    user2.setName("123");
     user2.setAge(12);
 
     List<User> userList = new ArrayList<User>();

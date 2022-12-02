@@ -1,7 +1,5 @@
 ## HTML&CSS
 
-
-
 ## 1，HTML
 
 ### 1.1  介绍
@@ -10,7 +8,7 @@ HTML 是一门语言，所有的网页都是用HTML 这门语言编写出来的�
 
 ![image-20210811151737929](assets/image-20210811151737929.png)
 
-![img](assets/image-20210811151658928.png" )
+![img](assets/image-20210811151658928.png)
 
 这些都是网页展示出来的效果。而HTML也有专业的解释
 
@@ -28,9 +26,10 @@ HTML 是一门语言，所有的网页都是用HTML 这门语言编写出来的�
 
   可以看到如下内容，就是由一个一个的标签组成的
 
-  ![img](assets/image-20210811152558939.png" )
+  ![img](assets/image-20210811152558939.png )
 
-这些标签不像XML那样可以自定义，==HTML中的标签都是预定义好的，运行在浏览器上并由浏览器解析，==然后展示出对应的效果。例如我们想在浏览器上展示出图片就需要使用预定义的 `img` 标签；想展示可以点击的链接的效果就可以使用预定义的 `a` 标签等。
+这些标签不像XML那样可以自定义，==HTML中的标签都是预定义好的，运行在浏览器上并由浏览器解析，==然后展示出对应的效果。例如我们想在浏览器上展示出图片就需要使用预定义的 `img`
+标签；想展示可以点击的链接的效果就可以使用预定义的 `a` 标签等。
 
 HTML 预定义了很多标签，由于我们是Java工程师、是做后端开发，所以不会每个都学习，页面开发是有专门的前端工程来开发。那为什么我们还要学习呢？在公司中或多或少大家也会涉及到前端开发。
 
@@ -70,7 +69,7 @@ HTML定义页面的整体结构；CSS是用来美化页面，让页面看起来�
 
 需求：编写如下图效果的页面
 
-![img](assets/image-20210811160100054.png" )
+![img](assets/image-20210811160100054.png )
 
 要实现这个页面，我们需要从以下三步进行实现
 
@@ -93,14 +92,14 @@ HTML定义页面的整体结构；CSS是用来美化页面，让页面看起来�
   </html>
   ```
 
-  html标签是根标签，下面有 `head` 标签和 `body` 标签这两个子标签。而 `head` 标签的 `title` 子标签是用来定义页面标题名称的，它定义的内容会展示在浏览器的标题位置，如下图红框标记
+  html标签是根标签，下面有 `head` 标签和 `body` 标签这两个子标签。而 `head` 标签的 `title`
+  子标签是用来定义页面标题名称的，它定义的内容会展示在浏览器的标题位置，如下图红框标记
 
-  ![img](assets/image-20210811160719292.png" )
+  ![img](assets/image-20210811160719292.png )
 
   `body` 标签的内容会被展示在内容区中，如下图红框标记
 
-  ![img](assets/image-20210811160839423.png" )
-
+  ![img](assets/image-20210811160839423.png )
 
 
 * 在<body>中定义文字
@@ -108,28 +107,31 @@ HTML定义页面的整体结构；CSS是用来美化页面，让页面看起来�
 代码如下：
 
 ```html
+
 <html>
-	<head>
-    	<title>html 快速入门</title>
-    </head>
-    <body>
-        乾坤未定，你我皆是黑马~
-    </body>
+<head>
+  <title>html 快速入门</title>
+</head>
+<body>
+书到用时，方恨少。
+</body>
 </html>
 ```
 
 同学们在访问其他网站页面时会看到字体颜色是五颜六色的，我们可以该字体颜色吗？当然可以了
 
-`font` 标签就可以使用，该标签有一个 `color` 属性可以设置字体颜色，如： <font color='red'></font> 就是将文字设置成了红颜色。那么我们只需要将需要变成红色的文字放在标签体部分就可以了，如下：
+`font` 标签就可以使用，该标签有一个 `color` 属性可以设置字体颜色，如： <font color='red'></font>
+就是将文字设置成了红颜色。那么我们只需要将需要变成红色的文字放在标签体部分就可以了，如下：
 
 ```html
+
 <html>
-	<head>
-    	<title>html 快速入门</title>
-    </head>
-    <body>
-        <font color='red'>乾坤未定，你我皆是黑马~</font>
-    </body>
+<head>
+  <title>html 快速入门</title>
+</head>
+<body>
+<font color='red'>书到用时方恨少</font>
+</body>
 </html>
 ```
 
@@ -139,7 +141,7 @@ HTML定义页面的整体结构；CSS是用来美化页面，让页面看起来�
 
 * HTML 结构标签
 
-  ![img](assets/image-20210811161810610.png" )
+  ![img](assets/image-20210811161810610.png )
 
 * HTML 标签不区分大小写
 
@@ -153,13 +155,11 @@ HTML定义页面的整体结构；CSS是用来美化页面，让页面看起来�
 
   比如 font 标签不加结束标签也是可以展示出效果的。但是建议同学们在写的时候还是不要这样做，严格按照要求去写。
 
-
-
 ### 1.3  基础标签
 
 基础标签就是一些和文字相关的标签，如下：
 
-![img](assets/image-20210811171740881.png" )
+![img](assets/image-20210811171740881.png )
 
 接下来我们挨个进行讲解
 
@@ -175,11 +175,11 @@ HTML定义页面的整体结构；CSS是用来美化页面，让页面看起来�
 
   选中 `html` 文件夹右键创建页面文件（01-基础标签.html）
 
-  ![img](assets/image-20210811172511287.png" )
+  ![img](assets/image-20210811172511287.png )
 
   创建好后 idea 会自动加上结构标签，如下
 
-  ![img](assets/image-20210811172704525.png" )
+  ![img](assets/image-20210811172704525.png )
 
   我们只需要在 `body` 标签中书写标签。
 
@@ -200,11 +200,11 @@ HTML定义页面的整体结构；CSS是用来美化页面，让页面看起来�
 
   idea 提供了快捷的打开方式，如下图
 
-  ![img](assets/image-20210811172942861.png" )
+  ![img](assets/image-20210811172942861.png )
 
   浏览器展示效果如下：
 
-  ![img](assets/image-20210811173034453.png" )
+  ![img](assets/image-20210811173034453.png )
 
 #### 1.3.2  hr标签
 
@@ -219,8 +219,6 @@ HTML定义页面的整体结构；CSS是用来美化页面，让页面看起来�
 效果如下：
 
 ![image-20210811173605496](assets/image-20210811173605496.png)
-
-
 
 #### 1.3.3  字体标签
 
@@ -254,7 +252,6 @@ font：字体标签
 <font face="楷体" size="5" color="#ff0000">北省的博客</font>
 ```
 
-
 > ==注意：==
 >
 > font 标签已经不建议使用了，以后如果要改变文字字体，大小，颜色可以使用 CSS 进行设置。
@@ -269,7 +266,7 @@ font：字体标签
 6月8日下午，习近平总书记来到青海省海北藏族自治州刚察县沙柳河镇果洛藏贡麻村，走进牧民索南才让家中，看望慰问藏族群众。
 ```
 
- 在浏览器展示的效果如下：
+在浏览器展示的效果如下：
 
 ![image-20210811175442896](assets/image-20210811175442896.png)
 
@@ -285,7 +282,7 @@ font：字体标签
 
 浏览器打开效果如下：
 
-![img](assets/image-20210811175649409.png" )
+![img](assets/image-20210811175649409.png )
 
 现在就有换行效果了。
 
@@ -297,16 +294,16 @@ font：字体标签
 
 ```html
 <p>
-刚察草原绿草如茵，沙柳河水流淌入湖。藏族牧民索南才让家中，茶几上摆着馓子、麻花和水果，炉子上刚煮开的奶茶香气四溢……
+  刚察草原绿草如茵，沙柳河水流淌入湖。藏族牧民索南才让家中，茶几上摆着馓子、麻花和水果，炉子上刚煮开的奶茶香气四溢……
 </p>
 <p>
-6月8日下午，习近平总书记来到青海省海北藏族自治州刚察县沙柳河镇果洛藏贡麻村，走进牧民索南才让家中，看望慰问藏族群众。
+  6月8日下午，习近平总书记来到青海省海北藏族自治州刚察县沙柳河镇果洛藏贡麻村，走进牧民索南才让家中，看望慰问藏族群众。
 </p>
 ```
 
 在浏览器展示的效果如下：
 
-![img](assets/image-20210811180041023.png" )
+![img](assets/image-20210811180041023.png )
 
 这种效果就会比之前的效果好一些，呈现出段落的效果。
 
@@ -326,7 +323,7 @@ font：字体标签
 
 在浏览器展示的效果如下：
 
-![img](assets/image-20210811180336928.png" )
+![img](assets/image-20210811180336928.png )
 
 #### 1.3.7  居中标签
 
@@ -335,9 +332,10 @@ center ：文本居中
 代码如下：
 
 ```html
+
 <hr>
 <center>
-    <b>沙柳河水流淌</b>
+  <b>沙柳河水流淌</b>
 </center>
 ```
 
@@ -355,11 +353,11 @@ center ：文本居中
 
 > 注意：在上图页面中版权所有里有特殊字符，需要使用转义字符。有如下转义字符：
 >
-> ![img](assets/image-20210811180929858.png" )
+> ![img](assets/image-20210811180929858.png )
 
 ### 1.4  图片、音频、视频标签
 
-![img](assets/image-20210811181303117.png")
+![img](assets/image-20210811181303117.png)
 
 * img：定义图片
 
@@ -406,15 +404,15 @@ height属性和width属性有两种设置方式：
 
   找页面和其他资源的相对路径。
 
-  > ./    表示当前路径
+  > ./ 表示当前路径
   >
-  > ../   表示上一级路径
+  > ../ 表示上一级路径
   >
-  > ../../   表示上两级路径
+  > ../../ 表示上两级路径
 
   如模块目录结构如下：
 
-  ![img](assets/image-20210811190840184.png" )
+  ![img](assets/image-20210811190840184.png )
 
   在 `01-基础标签.html` 里的标签中找不同的图片，路径写法不同
 
@@ -441,11 +439,11 @@ height属性和width属性有两种设置方式：
 
 在网页中可以看到很多超链接标签，如下
 
-<img src="(assets/image-20210811191725308.png")
+![img](assets/image-20210811191725308.png)
 
 上图红框中的都是超链接，当我们点击这些超链接时会跳转到其他的页面或者资源。而超链接使用的是 `a` 标签。
 
-![img](assets/image-20210811191852726.png" alt="image-20210811191852726" style="zoom:70%;" />
+![img](assets/image-20210811191852726.png )
 
 `a` 标签属性：
 
@@ -461,22 +459,22 @@ height属性和width属性有两种设置方式：
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+  <meta charset="UTF-8">
+  <title>Title</title>
 </head>
 <body>
-	<a href="https://www.itcast.cn" target="_self">点我有惊喜</a>
+<a href="https://www.itcast.cn" target="_self">点我有惊喜</a>
 </body>
 </html>
 ```
 
 效果图示：
 
-![img](assets/image-20210811192332854.png" )
+![img](assets/image-20210811192332854.png )
 
 当我们将 `target` 属性值设置为 `_blank`，效果图示：
 
-![img](assets/image-20210811192512960.png" )
+![img](assets/image-20210811192512960.png )
 
 ### 1.6  列表标签
 
@@ -486,17 +484,17 @@ HTML 中列表分为
 
   如下图，页面效果中是有标号对每一项进行标记的。
 
-  ![img](assets/image-20210811192825145.png" )
+  ![img](assets/image-20210811192825145.png )
 
 * 无序列表
 
   如下图，页面效果中没有标号对每一项进行标记，而是使用 点 进行标记。
 
-  ![img](assets/image-20210811192905834.png" )
+  ![img](assets/image-20210811192905834.png )
 
 **标签说明：**
 
-![img](assets/image-20210811193105881.png" )
+![img](assets/image-20210811193105881.png )
 
 有序列表中的 `type` 属性用来指定标记的标号的类型（数字、字母、罗马数字等）
 
@@ -508,28 +506,28 @@ HTML 中列表分为
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+  <meta charset="UTF-8">
+  <title>Title</title>
 </head>
 <body>
-    <ol type="A">
-        <li>咖啡</li>
-        <li>茶</li>
-        <li>牛奶</li>
-    </ol>
+<ol type="A">
+  <li>咖啡</li>
+  <li>茶</li>
+  <li>牛奶</li>
+</ol>
 
-    <ul type="circle">
-        <li>咖啡</li>
-        <li>茶</li>
-        <li>牛奶</li>
-    </ul>
+<ul type="circle">
+  <li>咖啡</li>
+  <li>茶</li>
+  <li>牛奶</li>
+</ul>
 </body>
 </html>
 ```
 
 ### 1.7  表格标签
 
-![img](assets/image-20210811193819851.png" )
+![img](assets/image-20210811193819851.png )
 
 如上图就是一个表格，表格可以使用如下标签定义
 
@@ -559,38 +557,38 @@ HTML 中列表分为
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+  <meta charset="UTF-8">
+  <title>Title</title>
 </head>
 <body>
 
 <table border="1" cellspacing="0" width="500">
-    <tr>
-        <th>序号</th>
-        <th>品牌logo</th>
-        <th>品牌名称</th>
-        <th>企业名称</th>
-    </tr>
-    <tr align="center">
-        <td>010</td>
-        <td><img src="../img/三只松鼠.png" width="60" height="50"></td>
-        <td>三只松鼠</td>
-        <td>三只松鼠</td>
-    </tr>
+  <tr>
+    <th>序号</th>
+    <th>品牌logo</th>
+    <th>品牌名称</th>
+    <th>企业名称</th>
+  </tr>
+  <tr align="center">
+    <td>010</td>
+    <td><img src="../img/三只松鼠.png" width="60" height="50"></td>
+    <td>三只松鼠</td>
+    <td>三只松鼠</td>
+  </tr>
 
-    <tr align="center">
-        <td>009</td>
-        <td><img src="../img/优衣库.png" width="60" height="50"></td>
-        <td>优衣库</td>
-        <td>优衣库</td>
-    </tr>
+  <tr align="center">
+    <td>009</td>
+    <td><img src="../img/优衣库.png" width="60" height="50"></td>
+    <td>优衣库</td>
+    <td>优衣库</td>
+  </tr>
 
-    <tr align="center">
-        <td>008</td>
-        <td><img src="../img/小米.png" width="60" height="50"></td>
-        <td>小米</td>
-        <td>小米科技有限公司</td>
-    </tr>
+  <tr align="center">
+    <td>008</td>
+    <td><img src="../img/小米.png" width="60" height="50"></td>
+    <td>小米</td>
+    <td>小米科技有限公司</td>
+  </tr>
 </table>
 </body>
 </html>
@@ -598,7 +596,7 @@ HTML 中列表分为
 
 ### 1.8  布局标签
 
-![img](assets/image-20210811194410699.png" )
+![img](assets/image-20210811194410699.png )
 
 这两个标签，一般都是和css结合到一块使用来实现页面的布局。
 
@@ -610,14 +608,14 @@ HTML 中列表分为
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+  <meta charset="UTF-8">
+  <title>Title</title>
 </head>
 <body>
-    <div>我是div</div>
-    <div>我是div</div>
-    <span>我是span</span>
-    <span>我是span</span>
+<div>我是div</div>
+<div>我是div</div>
+<span>我是span</span>
+<span>我是span</span>
 </body>
 </html>
 ```
@@ -630,7 +628,7 @@ HTML 中列表分为
 
 表单标签效果大家其实都不陌生，像登陆页面、注册页面等都是表单。
 
-![img](assets/image-20210812215311168.png" )
+![img](assets/image-20210812215311168.png )
 
 像这样的表单就是用来采集用户输入的数据，然后将数据发送到服务端，服务端会对数据库进行操作，比如注册就是将数据保存到数据库中，而登陆就是根据用户名和密码进行数据库的查询操作。
 
@@ -642,11 +640,11 @@ HTML 中列表分为
 >
 > 表单项(元素)：不同类型的 input 元素、下拉列表、文本域等
 
-![img](assets/image-20210812215704511.png" )
+![img](assets/image-20210812215704511.png )
 
 `form` 是表单标签，它在页面上没有任何展示的效果，其作用为指定提交数据的一个范围，只有在表单中包裹的表单项才具备被提交数据的资格。需要借助于表单项标签来展示不同的效果。如下图就是不同的表单项标签展示出来的效果。
 
-![img](assets/image-20210812215857298.png" )
+![img](assets/image-20210812215857298.png )
 
 #### 1.9.2  form标签属性
 
@@ -666,52 +664,51 @@ HTML 中列表分为
     * 请求参数无限制的
 
 ```html
+
 <form action="#" method="post" autocomplete="off"><!--autocomplete :是否开启浏览器自动补全功能-->
-    <input type="hidden" name="id" value="123">
+  <input type="hidden" name="id" value="123">
 
 
-    <label for="username">用户名：</label><!--placeholder :输入框内的提示信息  value：设置默认值-->
-    <input type="text" name="username" id="username" placeholder="这是填写姓名的地方" value="test"><br>
+  <label for="username">用户名：</label><!--placeholder :输入框内的提示信息  value：设置默认值-->
+  <input type="text" name="username" id="username" placeholder="这是填写姓名的地方" value="test"><br>
 
-    <label for="password">密码：</label>
-    <input type="password" name="password" id="password" placeholder="这是密码" value="1234"><br>
+  <label for="password">密码：</label>
+  <input type="password" name="password" id="password" placeholder="这是密码" value="1234"><br>
 
-    性别：<!--checked：默认选中状态设置-->
-    <input type="radio" name="gender" value="1" id="male" > <label for="male">男</label>
-    <input type="radio" name="gender" value="2" id="female" checked> <label for="female">女</label>
-    <br>
+  性别：<!--checked：默认选中状态设置-->
+  <input type="radio" name="gender" value="1" id="male"> <label for="male">男</label>
+  <input type="radio" name="gender" value="2" id="female" checked> <label for="female">女</label>
+  <br>
 
-    爱好：
-    <input type="checkbox" name="hobby" value="1" checked> 旅游<!--checked：默认选中状态设置-->
-    <input type="checkbox" name="hobby" value="2"> 电影
-    <input type="checkbox" name="hobby" value="3" checked> 游戏
-    <br>
+  爱好：
+  <input type="checkbox" name="hobby" value="1" checked> 旅游<!--checked：默认选中状态设置-->
+  <input type="checkbox" name="hobby" value="2"> 电影
+  <input type="checkbox" name="hobby" value="3" checked> 游戏
+  <br>
 
-    头像：
-    <input type="file"><br>
+  头像：
+  <input type="file"><br>
 
-    城市:
-    <select name="city">
-        <option>北京</option>
-        <option value="shanghai">上海</option>
-        <option selected>广州</option><!--selected：下拉列表默认选中状态设置-->
-    </select>
-    <br>
+  城市:
+  <select name="city">
+    <option>北京</option>
+    <option value="shanghai">上海</option>
+    <option selected>广州</option><!--selected：下拉列表默认选中状态设置-->
+  </select>
+  <br>
 
-    个人描述：
-    <textarea cols="20" rows="5" name="desc">123456</textarea><!--标签体设置默认值-->
-    <br>
-    <br>
-    <input type="submit" value="免费注册">
-    <input type="reset" value="重置">
-    <input type="button" value="一个按钮">
+  个人描述：
+  <textarea cols="20" rows="5" name="desc">123456</textarea><!--标签体设置默认值-->
+  <br>
+  <br>
+  <input type="submit" value="免费注册">
+  <input type="reset" value="重置">
+  <input type="button" value="一个按钮">
 
 
 </form>
 
 ```
-
-
 
 #### 1.9.3  代码演示
 
@@ -723,53 +720,56 @@ HTML 中列表分为
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+  <meta charset="UTF-8">
+  <title>Title</title>
 </head>
 <body>
-    <form>
-        <input type="text">
-        <input type="submit">
-    </form>
+<form>
+  <input type="text">
+  <input type="submit">
+</form>
 </body>
 </html>
 ```
 
 浏览器展示效果如下：
 
-![img](assets/image-20210812220926114.png")
+![img](assets/image-20210812220926114.png)
 
-从效果可以看到页面有一个输入框，用户可以在数据框中输入自己想输入的内容，点击提交按钮以后会将数据发送到服务端，当然现在肯定不能实现。现在我们可以将 `form` 标签的 `action` 属性值设置为 `#` ，将其将数据提交到当前页面。还需要注意一点，要想提交数据，`input` 输入框必须设置 `name` 属性。代码如下：
+从效果可以看到页面有一个输入框，用户可以在数据框中输入自己想输入的内容，点击提交按钮以后会将数据发送到服务端，当然现在肯定不能实现。现在我们可以将 `form`
+标签的 `action` 属性值设置为 `#` ，将其将数据提交到当前页面。还需要注意一点，要想提交数据，`input` 输入框必须设置 `name`
+属性。代码如下：
 
 ```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+  <meta charset="UTF-8">
+  <title>Title</title>
 </head>
 <body>
-    <form action="#">
-        <input type="text" name="username">
-        <input type="submit">
-    </form>
+<form action="#">
+  <input type="text" name="username">
+  <input type="submit">
+</form>
 </body>
 </html>
 ```
 
 浏览器展示效果如下：
 
-![img](assets/image-20210812221656295.png" alt="image-20210812221656295" style="zoom:80%;" />
+![img](assets/image-20210812221656295.png)
 
 在输入框输入 `hehe` ，然后点击 `提交` 按钮，就能看到如下效果
 
-![img](assets/image-20210812221801965.png" )
+![img](assets/image-20210812221801965.png )
 
 我们可以看到在浏览器的地址栏的URL后拼接了我们提交的数据。`username` 就是输入框 `name` 属性值，而 `hehe` 就是我们在输入框输入的内容。
 
-接下来我们来聊 `method` 属性，默认是 `method = 'get'`，所以该取值就会将数据拼接到URL的后面。那我们将 `method` 属性值设置为 `post`，浏览器的效果如下：
+接下来我们来聊 `method` 属性，默认是 `method = 'get'`，所以该取值就会将数据拼接到URL的后面。那我们将 `method`
+属性值设置为 `post`，浏览器的效果如下：
 
-![img](assets/image-20210812222334790.png" )
+![img](assets/image-20210812222334790.png )
 
 从上图可以看出数据并没有拼接到 URL 后，那怎么看提交的数据呢？我们可以使用浏览器的开发者工具来查看
 
@@ -781,7 +781,7 @@ HTML 中列表分为
 
 重新提交数据后，可以看到提交的数据，如下图
 
-![img](assets/image-20210812223150373.png")
+![img](assets/image-20210812223150373.png)
 
 ### 1.10  表单项标签
 
@@ -791,15 +791,14 @@ HTML 中列表分为
 
   `input` 标签有个 `type` 属性。 `type` 属性的取值不同，展示的效果也不一样
 
-  ![img](assets/image-20210812223956360.png")
-
+  ![img](assets/image-20210812223956360.png)
 
 
 * \<select>：定义下拉列表，\<option> 定义列表项
 
   如下图就是下拉列表的效果：
 
-  ![img](assets/image-20210812223708205.png")
+  ![img](assets/image-20210812223708205.png)
 
 * \<textarea>：文本域
 
@@ -819,56 +818,56 @@ HTML 中列表分为
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+  <meta charset="UTF-8">
+  <title>Title</title>
 </head>
 <body>
-    <form action="#" method="post">
-        <input type="hidden" name="id" value="123">
+<form action="#" method="post">
+  <input type="hidden" name="id" value="123">
 
-        <label for="username">用户名：</label>
-        <input type="text" name="username" id="username"><br>
+  <label for="username">用户名：</label>
+  <input type="text" name="username" id="username"><br>
 
-        <label for="password">密码：</label>
-        <input type="password" name="password" id="password"><br>
+  <label for="password">密码：</label>
+  <input type="password" name="password" id="password"><br>
 
-        性别：
-        <input type="radio" name="gender" value="1" id="male"> <label for="male">男</label>
-        <input type="radio" name="gender" value="2" id="female"> <label for="female">女</label>
-        <br>
+  性别：
+  <input type="radio" name="gender" value="1" id="male"> <label for="male">男</label>
+  <input type="radio" name="gender" value="2" id="female"> <label for="female">女</label>
+  <br>
 
-        爱好：
-        <input type="checkbox" name="hobby" value="1"> 旅游
-        <input type="checkbox" name="hobby" value="2"> 电影
-        <input type="checkbox" name="hobby" value="3"> 游戏
-        <br>
+  爱好：
+  <input type="checkbox" name="hobby" value="1"> 旅游
+  <input type="checkbox" name="hobby" value="2"> 电影
+  <input type="checkbox" name="hobby" value="3"> 游戏
+  <br>
 
-        头像：
-        <input type="file"><br>
+  头像：
+  <input type="file"><br>
 
-        城市:
-        <select name="city">
-            <option>北京</option>
-            <option value="shanghai">上海</option>
-            <option>广州</option>
-        </select>
-        <br>
+  城市:
+  <select name="city">
+    <option>北京</option>
+    <option value="shanghai">上海</option>
+    <option>广州</option>
+  </select>
+  <br>
 
-        个人描述：
-        <textarea cols="20" rows="5" name="desc"></textarea>
-        <br>
-        <br>
-        <input type="submit" value="免费注册">
-        <input type="reset" value="重置">
-        <input type="button" value="一个按钮">
-    </form>
+  个人描述：
+  <textarea cols="20" rows="5" name="desc"></textarea>
+  <br>
+  <br>
+  <input type="submit" value="免费注册">
+  <input type="reset" value="重置">
+  <input type="button" value="一个按钮">
+</form>
 </body>
 </html>
 ```
 
 在浏览器的效果如下：
 
-![img](assets/image-20210812224152747.png" )
+![img](assets/image-20210812224152747.png )
 
 ## 2，CSS
 
@@ -888,23 +887,23 @@ CSS也有一个专业的名字：==Cascading Style Sheet（层叠样式表）。
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-    <style>
-        div{
-            color: red;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <style>
+    div {
+      color: red;
+    }
+  </style>
 </head>
 <body>
-    <div>Hello CSS~</div>
+<div>Hello CSS~</div>
 </body>
 </html>
 ```
 
 在浏览器中的效果如下：
 
-![img](assets/image-20210812225424174.png" )
+![img](assets/image-20210812225424174.png )
 
 ### 2.2  css 导入方式
 
@@ -952,7 +951,7 @@ css 导入方式其实就是 css 代码和 html 代码的结合方式。CSS 导�
 
 项目目录结构如下：
 
-![img](assets/image-20210812231514311.png" )
+![img](assets/image-20210812231514311.png )
 
 编写页面 `02-导入方式.html`，内容如下：
 
@@ -960,21 +959,21 @@ css 导入方式其实就是 css 代码和 html 代码的结合方式。CSS 导�
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-    <style>
-        span{
-            color: red;
-        }
-    </style>
-    <link href="../css/demo.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <style>
+    span {
+      color: red;
+    }
+  </style>
+  <link href="../css/demo.css" rel="stylesheet">
 </head>
 <body>
-    <div style="color: red">hello css</div>
+<div style="color: red">hello css</div>
 
-    <span>hello css </span>
+<span>hello css </span>
 
-    <p>hello css</p>
+<p>hello css</p>
 </body>
 </html>
 ```
@@ -985,7 +984,7 @@ css 选择器就是选取需设置样式的元素（标签），比如如下css�
 
 ```css
 div {
-	color:red;
+  color: red;
 }
 ```
 
@@ -1055,33 +1054,31 @@ div {
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-    <style>
-        div{
-            color: red;
-        }
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <style>
+    div {
+      color: red;
+    }
 
-        #name{
-            color: blue;
-        }
+    #name {
+      color: blue;
+    }
 
-        .cls{
-            color: pink;
-        }
-    </style>
+    .cls {
+      color: pink;
+    }
+  </style>
 
 </head>
 <body>
-    <div>div1</div>
-    <div id="name">div2</div>
-    <div class="cls">div3</div>
-    <span class="cls">span</span>
+<div>div1</div>
+<div id="name">div2</div>
+<div class="cls">div3</div>
+<span class="cls">span</span>
 </body>
 </html>
 ```
-
-
 
 ### 2.4  css 属性
 
@@ -1089,12 +1086,13 @@ css属性我们不作为重点讲解。我们简单的看一下css的文档
 
 ![image-20210812233107495](assets/image-20210812233107495.png)
 
-css有很多css属性，你要想把它们都学会，需要花费很长的时间。而我们作为java程序员，不需要重点掌握这部分内容。对于网页三剑客中css是对我们要求最低的。给大家简单介绍一下文档怎么查看即可，如下我们看一个 `background-color` 属性
+css有很多css属性，你要想把它们都学会，需要花费很长的时间。而我们作为java程序员，不需要重点掌握这部分内容。对于网页三剑客中css是对我们要求最低的。给大家简单介绍一下文档怎么查看即可，如下我们看一个 `background-color`
+属性
 
-![img](assets/image-20210812233415060.png" )
+![img](assets/image-20210812233415060.png )
 
 点击进去后能看到下面界面
 
-![img](assets/image-20210812233510734.png")
+![img](assets/image-20210812233510734.png)
 
 上面就列举了该属性的具体的使用，你也可以点击下面的 `亲自试一试` 看效果。

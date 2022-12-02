@@ -448,7 +448,7 @@ docker run --name containerName -p 80:80 -d nginx
 
 ### 2.2.3.案例-进入容器，修改文件
 
-**需求**：进入Nginx容器，修改HTML文件内容，添加“传智教育欢迎您”
+**需求**：进入Nginx容器，修改HTML文件内容，添加“123欢迎您”
 
 **提示**：进入容器要用到docker exec命令。
 
@@ -503,7 +503,7 @@ cd /usr/share/nginx/html
 容器内没有vi命令，无法直接修改，我们用下面的命令来修改：
 
 ```sh
-sed -i -e 's#传智教育欢迎您!#北省欢迎您!#g' -e 's#<head>#<head><meta charset="utf-8">#g' index.html
+sed -i -e 's#123欢迎您!#北省欢迎您!#g' -e 's#<head>#<head><meta charset="utf-8">#g' index.html
 ```
 
 

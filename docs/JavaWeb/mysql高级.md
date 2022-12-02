@@ -3,7 +3,7 @@
 
 ## 1，约束
 
-![img](assets/image-20210724104749122.png")
+![img](assets/image-20210724104749122.png)
 
 上面表中可以看到表中数据存在一些问题：
 
@@ -259,7 +259,7 @@ INSERT INTO emp(id,ename,joindate,salary,bonus) values(null,'张三','1999-11-11
 
 执行结果如下：
 
-![img](assets/image-20210724114548170.png" )
+![img](assets/image-20210724114548170.png )
 
 从上面的结果可以看到，字段 `id` 不能为null。那我们重新添加一条数据，如下：
 
@@ -269,7 +269,7 @@ INSERT INTO emp(id,ename,joindate,salary,bonus) values(1,'张三','1999-11-11',8
 
 执行结果如下：
 
-![img](assets/image-20210724114805350.png")
+![img](assets/image-20210724114805350.png)
 
 从上面结果可以看到，1这个值重复了。所以主键约束是用来限制数据非空且唯一的。那我们再添加一条符合要求的数据
 
@@ -279,7 +279,7 @@ INSERT INTO emp(id,ename,joindate,salary,bonus) values(2,'李四','1999-11-11',8
 
 执行结果如下：
 
-![img](assets/image-20210724115024106.png")
+![img](assets/image-20210724115024106.png)
 
 * **验证非空约束**
 
@@ -289,7 +289,7 @@ INSERT INTO emp(id,ename,joindate,salary,bonus) values(3,null,'1999-11-11',8800,
 
 执行结果如下：
 
-![img](assets/image-20210724115149415.png")
+![img](assets/image-20210724115149415.png)
 
 从上面结果可以看到，`ename` 字段的非空约束生效了。
 
@@ -301,7 +301,7 @@ INSERT INTO emp(id,ename,joindate,salary,bonus) values(3,'李四','1999-11-11',8
 
 执行结果如下：
 
-![img](assets/image-20210724115336916.png")
+![img](assets/image-20210724115336916.png)
 
 从上面结果可以看到，`ename` 字段的唯一约束生效了。
 
@@ -313,7 +313,7 @@ INSERT INTO emp(id,ename,joindate,salary) values(3,'王五','1999-11-11',8800);
 
 执行完上面语句后查询表中数据，如下图可以看到王五这条数据的bonus列就有了默认值0。
 
-![img](assets/image-20210724115547951.png")
+![img](assets/image-20210724115547951.png)
 
 ==注意：默认约束只有在不给值时才会采用默认值。如果给了null，那值就是null值。==
 
@@ -325,7 +325,7 @@ INSERT INTO emp(id,ename,joindate,salary,bonus) values(4,'赵六','1999-11-11',8
 
 执行完上面语句后查询表中数据，如下图可以看到赵六这条数据的bonus列的值是null。
 
-![img](assets/image-20210724115826516.png")
+![img](assets/image-20210724115826516.png)
 
 * **验证： auto_increment  当列是数字类型 并且唯一约束**
 
@@ -360,7 +360,7 @@ INSERT INTO emp(id,ename,joindate,salary,bonus) values(null,'赵六3','1999-11-1
 
 如何理解上面的概念呢？如下图有两张表，员工表和部门表：
 
-![img](assets/image-20210724120904180.png")
+![img](assets/image-20210724120904180.png)
 
 员工表中的dep_id字段是部门表的id字段关联，也就是说1号学生张三属于1号部门研发部的员工。现在我要删除1号部门，就会出现错误的数据（员工表中属于1号部门的数据）。而我们上面说的两张表的关系只是我们认为它们有关系，此时需要通过外键让这两张表产生数据库层面的关系，这样你要删除部门表中的1号部门的数据将无法删除。
 
@@ -456,7 +456,7 @@ alter table emp add CONSTRAINT fk_emp_dept FOREIGN key(dep_id) REFERENCES dept(i
 
 * 软件的研发步骤
 
-  ![img](assets/image-20210724130925801.png")
+  ![img](assets/image-20210724130925801.png)
 
 * 数据库设计概念
   * 数据库设计就是根据业务系统的具体需求，结合我们所选用的DBMS，为这个业务系统构造出最优的数据存储模型。
@@ -471,7 +471,7 @@ alter table emp add CONSTRAINT fk_emp_dept FOREIGN key(dep_id) REFERENCES dept(i
 
     如下图就是ER(Entity/Relation)图：
 
-    ![img](assets/image-20210724131210759.png")
+    ![img](assets/image-20210724131210759.png)
 
   * 物理设计（根据数据库自身的特点把逻辑设计转换为物理设计）
 
@@ -484,7 +484,7 @@ alter table emp add CONSTRAINT fk_emp_dept FOREIGN key(dep_id) REFERENCES dept(i
     * 如：用户 和 用户详情
     * 一对一关系多用于表拆分，将一个实体中经常使用的字段放一张表，不经常使用的字段放另一张表，用于提升查询性能
 
-    ![img](assets/image-20210724133015129.png")
+    ![img](assets/image-20210724133015129.png)
 
     上图左边是用户的详细信息，而我们真正在展示用户信息时最长用的则是上图右边红框所示，所以我们会将详细信息查分成两周那个表。
 
@@ -494,7 +494,7 @@ alter table emp add CONSTRAINT fk_emp_dept FOREIGN key(dep_id) REFERENCES dept(i
 
     * 一个部门对应多个员工，一个员工对应一个部门。如下图：
 
-      ![img](assets/image-20210724133443094.png")
+      ![img](assets/image-20210724133443094.png)
 
   * 多对多
 
@@ -502,7 +502,7 @@ alter table emp add CONSTRAINT fk_emp_dept FOREIGN key(dep_id) REFERENCES dept(i
 
     * 一个商品对应多个订单，一个订单包含多个商品。如下图：
 
-      ![img](assets/image-20210724133704682.png")
+      ![img](assets/image-20210724133704682.png)
 
 ### 2.2  表关系(一对多)
 
@@ -519,11 +519,11 @@ alter table emp add CONSTRAINT fk_emp_dept FOREIGN key(dep_id) REFERENCES dept(i
 
   我们还是以 `员工表` 和 `部门表` 举例:
 
-  ![img](assets/image-20210724134145803.png")
+  ![img](assets/image-20210724134145803.png)
 
   经过分析发现，员工表属于多的一方，而部门表属于一的一方，此时我们会在员工表中添加一列（dep_id），指向于部门表的主键（id）：
 
-  ![img](assets/image-20210724134318685.png")
+  ![img](assets/image-20210724134318685.png)
 
   建表语句如下：
 
@@ -552,7 +552,7 @@ alter table emp add CONSTRAINT fk_emp_dept FOREIGN key(dep_id) REFERENCES dept(i
 
   查看表结构模型图：
 
-  ![img](assets/image-20210724140456921.png")
+  ![img](assets/image-20210724140456921.png)
 
 ### 2.3  表关系(多对多)
 
@@ -568,11 +568,11 @@ alter table emp add CONSTRAINT fk_emp_dept FOREIGN key(dep_id) REFERENCES dept(i
 
   我们以 `订单表` 和 `商品表` 举例：
 
-  ![img](assets/image-20210724134735939.png")
+  ![img](assets/image-20210724134735939.png)
 
   经过分析发现，订单表和商品表都属于多的一方，此时需要创建一个中间表，在中间表中添加订单表的外键和商品表的外键指向两张表的主键：
 
-  ![img](assets/image-20210724135054834.png")
+  ![img](assets/image-20210724135054834.png)
 
   建表语句如下：
 
@@ -612,7 +612,7 @@ alter table emp add CONSTRAINT fk_emp_dept FOREIGN key(dep_id) REFERENCES dept(i
 
   查看表结构模型图：
 
-  ![img](assets/image-20210724140307910.png")
+  ![img](assets/image-20210724140307910.png)
 
 
 
@@ -634,11 +634,11 @@ alter table emp add CONSTRAINT fk_emp_dept FOREIGN key(dep_id) REFERENCES dept(i
 
   我们以 `用户表` 举例：
 
-  ![img](assets/image-20210724135346913.png")
+  ![img](assets/image-20210724135346913.png)
 
   而在真正使用过程中发现 id、photo、nickname、age、gender 字段比较常用，此时就可以将这张表查分成两张表。
 
-​	![img](assets/image-20210724135649341.png")
+​	![img](assets/image-20210724135649341.png)
 
 ​
 
@@ -668,7 +668,7 @@ create table tb_user (
 
 ​	查看表结构模型图：
 
-![img](assets/image-20210724141445785.png")
+![img](assets/image-20210724141445785.png)
 
 
 
@@ -676,11 +676,11 @@ create table tb_user (
 
 根据下图设计表及表和表之间的关系：
 
-![img](assets/image-20210724141822204.png")
+![img](assets/image-20210724141822204.png)
 
 经过分析，我们分为 `专辑表`  `曲目表`  `短评表`  `用户表`   4张表。
 
-![img](assets/image-20210724141550446.png")
+![img](assets/image-20210724141550446.png)
 
 一个专辑可以有多个曲目，一个曲目只能属于某一张专辑，所以专辑表和曲目表的关系是==一对多==。
 
@@ -688,7 +688,7 @@ create table tb_user (
 
 一个用户可以发多个短评，一个短评只能是某一个人发的，所以用户表和短评表的关系是 ==一对多==。
 
-![img](assets/image-20210724142550839.png")
+![img](assets/image-20210724142550839.png)
 
 
 
@@ -737,7 +737,7 @@ select * from emp , dept;  -- 从emp和dept表中查询所有的字段数据
 
 结果如下：
 
-![img](assets/image-20210724173630506.png" )
+![img](assets/image-20210724173630506.png )
 
 从上面的结果我们看到有一些无效的数据，如 `孙悟空` 这个员工属于1号部门，但也同时关联的2、3、4号部门。所以我们要通过限制员工表中的 `dep_id` 字段的值和部门表 `did` 字段的值相等来消除这些无效的数据，
 
@@ -747,7 +747,7 @@ select * from emp , dept where emp.dep_id = dept.did;
 
 执行后结果如下：
 
-![img](assets/image-20210724174212443.png" )
+![img](assets/image-20210724174212443.png )
 
 上面语句就是连接查询，那么多表查询都有哪些呢？
 
@@ -759,7 +759,7 @@ select * from emp , dept where emp.dep_id = dept.did;
 
     关键字：cross join
 
-  ![img](assets/image-20210724174717647.png" )
+  ![img](assets/image-20210724174717647.png )
 
   * 内连接查询 ：相当于查询AB交集数据
   * 外连接查询
@@ -782,7 +782,7 @@ SELECT 字段列表 FROM 表1 [INNER] JOIN 表2 ON 条件  inner join 表3   on 
 
 > 内连接相当于查询 A B 交集数据
 
-![img](assets/image-20210724174717647.png" )
+![img](assets/image-20210724174717647.png )
 
 * 案例
 
@@ -800,7 +800,7 @@ SELECT 字段列表 FROM 表1 [INNER] JOIN 表2 ON 条件  inner join 表3   on 
 
     执行上述语句结果如下：
 
-    ![img](assets/image-20210724175344508.png" )
+    ![img](assets/image-20210724175344508.png )
 
   * 查询 emp的 name， gender，dept表的dname
 
@@ -818,7 +818,7 @@ SELECT 字段列表 FROM 表1 [INNER] JOIN 表2 ON 条件  inner join 表3   on 
 
     执行语句结果如下：
 
-    ![img](assets/image-20210724175518159.png" )
+    ![img](assets/image-20210724175518159.png )
 
     上面语句中使用表名指定字段所属有点麻烦，sql也支持给表指别名，上述语句可以改进为
 
@@ -844,7 +844,7 @@ SELECT 字段列表 FROM 表1 [INNER] JOIN 表2 ON 条件  inner join 表3   on 
 
     执行结果如下：
 
-    ![img](assets/image-20210724180103531.png" )
+    ![img](assets/image-20210724180103531.png )
 
 ### 3.2  外连接查询
 
@@ -862,7 +862,7 @@ SELECT 字段列表 FROM 表1 [INNER] JOIN 表2 ON 条件  inner join 表3   on 
   >
   > 右外连接：相当于查询B表所有数据和交集部分数据
 
-  ![img](assets/image-20210724174717647.png" )
+  ![img](assets/image-20210724174717647.png )
 
 * 案例
 
@@ -874,7 +874,7 @@ SELECT 字段列表 FROM 表1 [INNER] JOIN 表2 ON 条件  inner join 表3   on 
 
     执行语句结果如下：
 
-    ![img](assets/image-20210724180542757.png" )
+    ![img](assets/image-20210724180542757.png )
 
     结果显示查询到了左表（emp）中所有的数据及两张表能关联的数据。
 
@@ -886,7 +886,7 @@ SELECT 字段列表 FROM 表1 [INNER] JOIN 表2 ON 条件  inner join 表3   on 
 
     执行语句结果如下：
 
-    ![img](assets/image-20210724180613494.png" )
+    ![img](assets/image-20210724180613494.png )
 
     结果显示查询到了右表（dept）中所有的数据及两张表能关联的数据。
 
@@ -1264,7 +1264,7 @@ INSERT INTO salarygrade(grade,losalary,hisalary) VALUES
 
 这些概念不好理解，接下来举例说明，如下图有一张表
 
-![img](assets/image-20210724224955876.png" )
+![img](assets/image-20210724224955876.png )
 
 张三和李四账户中各有100块钱，现李四需要转换500块钱给张三，具体的转账操作为
 
@@ -1274,7 +1274,7 @@ INSERT INTO salarygrade(grade,losalary,hisalary) VALUES
 
 现在假设在转账过程中第二步完成后出现了异常第三步没有执行，就会造成李四账户金额少了500，而张三金额并没有多500；这样的系统是有问题的。如果解决呢？使用事务可以解决上述问题
 
-![img](assets/image-20210724225537533.png")
+![img](assets/image-20210724225537533.png)
 
 从上图可以看到在转账前开启事务，如果出现了异常回滚事务，三步正常执行就提交事务，这样就可以完美解决问题。
 
@@ -1338,7 +1338,7 @@ INSERT INTO salarygrade(grade,losalary,hisalary) VALUES
 
   整体执行结果肯定会出问题，我们查询账户表中数据，发现李四账户少了500。
 
-  ![img](assets/image-20210724230250263.png" )
+  ![img](assets/image-20210724230250263.png )
 
 * 添加事务sql如下：
 

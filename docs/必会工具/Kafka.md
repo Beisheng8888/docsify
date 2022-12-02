@@ -546,7 +546,7 @@ public class HelloController {
 
     @GetMapping("/hello")
     public String hello(){
-        kafkaTemplate.send("itcast-topic","黑马程序员");
+        kafkaTemplate.send("itcast-topic","345");
         return "ok";
     }
 }

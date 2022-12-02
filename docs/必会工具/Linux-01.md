@@ -52,7 +52,7 @@ Linux是一套免费使用和自由传播的操作系统。说到操作系统，
 
 学习完Linux操作系统课程之后，我们可以做以下几个方面的事情：
 
-<img src="assets/image-20210808234042174.png" alt="image-20210808234042174" style="zoom:80%;" />
+![img](assets/image-20210808234042174.png)
 
 **1). 环境搭建**
 
@@ -189,12 +189,12 @@ Linux系统的版本分为两种，分别是： 内核版 和 发行版。
 
 | 发行版本  | Logo                                                         | 特点                             |
 | --------- | ------------------------------------------------------------ | -------------------------------- |
-| Ubuntu    | <img src="assets/image-20210809001838861.png" alt="image-20210809001838861" style="zoom:50%;" /> | 以桌面应用为主                   |
-| RedHat    | <img src="assets/image-20210809001731378.png" alt="image-20210809001731378" style="zoom:50%;" /> | 应用最广泛、收费                 |
-| CentOS    | <img src="assets/image-20210809001741238.png" alt="image-20210809001741238" style="zoom:50%;" /> | RedHat的社区版、免费             |
-| openSUSE  | <img src="assets/image-20210809001750999.png" alt="image-20210809001750999" style="zoom:50%;" /> | 对个人完全免费、图形界面华丽     |
-| Fedora    | <img src="assets/image-20210809001800676.png" alt="image-20210809001800676" style="zoom:50%;" /> | 功能完备、快速更新、免费         |
-| 红旗Linux | <img src="assets/image-20210809001814942.png" alt="image-20210809001814942" style="zoom:50%;" /> | 北京中科红旗软件技术有限公司开发 |
+| Ubuntu    | ![img](assets/image-20210809001838861.png) | 以桌面应用为主                   |
+| RedHat    | ![img](assets/image-20210809001731378.png) | 应用最广泛、收费                 |
+| CentOS    | ![img](assets/image-20210809001741238.png) | RedHat的社区版、免费             |
+| openSUSE  | ![img](assets/image-20210809001750999.png) | 对个人完全免费、图形界面华丽     |
+| Fedora    | ![img](assets/image-20210809001800676.png) | 功能完备、快速更新、免费         |
+| 红旗Linux | ![img](assets/image-20210809001814942.png) | 北京中科红旗软件技术有限公司开发 |
 
 除了上述罗列出来的发行版，还有很多Linux发行版，这里，我们就不再一一列举了。
 
@@ -257,13 +257,13 @@ VMware虚拟机安装完毕之后，我们就可以打开VMware，并在上面�
 
 **1). 选择创建新的虚拟机**
 
-<img src="assets/image-20210809224601436.png" alt="image-20210809224601436" style="zoom:80%;" />
+![img](assets/image-20210809224601436.png)
 
 
 
 **2). 选择"典型"配置**
 
-<img src="assets/image-20210809224640245.png" alt="image-20210809224640245"  />
+![img](assets/image-20210809224640245.png)
 
 
 
@@ -299,13 +299,13 @@ VMware虚拟机安装完毕之后，我们就可以打开VMware，并在上面�
 
 **8). 启动上述创建的新虚拟机**
 
-<img src="assets/image-20210809230230390.png" alt="image-20210809230230390" style="zoom:80%;" />
+![img](assets/image-20210809230230390.png)
 
 
 
 **9). 选择"Install CentOS7"**
 
-<img src="assets/image-20210809230720673.png" alt="image-20210809230720673" style="zoom:80%;" />
+![img](assets/image-20210809230720673.png)
 
 > 进入到Linux系统里面, 我们发现光标无法移动到windows操作系统中了, 这个时候, 我们可以通过快捷键 "Ctrl+Alt" 切换光标到windows系统中。
 
@@ -313,7 +313,7 @@ VMware虚拟机安装完毕之后，我们就可以打开VMware，并在上面�
 
 **10). 选择语言为 "简体中文"**
 
-<img src="assets/image-20210809231002444.png" alt="image-20210809231002444" style="zoom:80%;" />
+![img](assets/image-20210809231002444.png)
 
 
 
@@ -349,7 +349,7 @@ VMware虚拟机安装完毕之后，我们就可以打开VMware，并在上面�
 
 服务器重启完成之后，我们可以通过linux的指令 `ip addr` 来查询Linux系统的IP地址，具体信息如下:
 
-<img src="assets/image-20210809233341574.png" alt="image-20210809233341574" style="zoom:80%;" />
+![img](assets/image-20210809233341574.png)
 
 从图中我们可以看到，并没有获取到linux系统的IP地址，这是为什么呢？这是由于启动服务器时未加载网卡，导致IP地址初始化失败而造成的。那么接下来我们就需要来修改网络初始化配置，设定网卡在系统启动时初始化。
 
@@ -383,11 +383,11 @@ vi ifcfg-ens33		编辑ifcfg-ens33文件
 
 2). 重新启动虚拟机
 
-<img src="assets/image-20210809234617798.png" alt="image-20210809234617798" style="zoom:80%;" />
+![img](assets/image-20210809234617798.png)
 
 重启之后, 再次输入root的用户名密码，登录到Linux系统之后，可以通过指令 `ip addr` 来查看IP地址。
 
-<img src="assets/image-20210809235056773.png" alt="image-20210809235056773"  />
+![img](assets/image-20210809235056773.png)
 
 
 
@@ -403,12 +403,12 @@ Linux已经安装并且配置好了，接下来我们要来学习Linux的基本�
 
 SSH（Secure Shell），建立在应用层基础上的安全协议。常用的SSH连接工具:
 
-| SSH工具    | Logo                                                         | 说明                                    |
-| ---------- | ------------------------------------------------------------ | --------------------------------------- |
-| putty      | <img src="assets/image-20210809235613688.png" alt="image-20210809235613688" style="zoom:15%;" /> | 免费, 界面简单, 功能单一                |
-| secureCRT  | <img src="assets/image-20210809235723109.png" alt="image-20210809235723109" style="zoom:20%;" /> | 收费, 功能强大                          |
-| xshell     | <img src="assets/image-20210809235802640.png" alt="image-20210809235802640" style="zoom:50%;" /> | 收费版/免费版                           |
-| finalshell | <img src="assets/image-20210809235841384.png" alt="image-20210809235841384" style="zoom: 67%;" /> | 免费, 功能强大, 界面效果好 (课程中采用) |
+| SSH工具    | Logo                                                        | 说明                                    |
+| ---------- | ----------------------------------------------------------- | --------------------------------------- |
+| putty      | ![img](assets/image-20210809235613688.png) | 免费, 界面简单, 功能单一                |
+| secureCRT  | ![img](assets/image-20210809235723109.png) | 收费, 功能强大                          |
+| xshell     | ![img](assets/image-20210809235802640.png) | 收费版/免费版                           |
+| finalshell | ![img](assets/image-20210809235841384.png) | 免费, 功能强大, 界面效果好 (课程中采用) |
 
 
 
@@ -430,13 +430,13 @@ SSH（Secure Shell），建立在应用层基础上的安全协议。常用的SS
 
 **1). 打开finalShell**
 
-<img src="assets/image-20210810173004153.png" alt="image-20210810173004153" style="zoom:80%;" />
+![img](assets/image-20210810173004153.png)
 
 
 
 **2). 建立连接**
 
-<img src="assets/image-20210810173138650.png" alt="image-20210810173138650" style="zoom:80%;" />
+![img](assets/image-20210810173138650.png)
 
  ![image-20210810173900140](assets/image-20210810173900140.png)
 
@@ -456,7 +456,7 @@ SSH（Secure Shell），建立在应用层基础上的安全协议。常用的SS
 
 **Linux 和 Windows的目录结构对比:**
 
-<img src="assets/image-20210810174831655.png" alt="image-20210810174831655" style="zoom: 80%;" />
+![img](assets/image-20210810174831655.png)
 
 
 
@@ -766,7 +766,7 @@ cat 指令会一次性查看文件的所有内容，如果文件内容比较多�
 
 **操作示例：**
 
-<img src="assets/image-20210810232212430.png" alt="image-20210810232212430" style="zoom:80%;" />
+![img](assets/image-20210810232212430.png)
 
 当我们在查看一些比较大的文件时，我们可能需要经常查询文件尾部的数据信息，那这个时候如果文件很大，我们要一直向下翻页，直到最后一页，去看最新添加的数据，这种方式就比较繁琐了，此时，我们可以借助于tail指令。
 
@@ -1112,7 +1112,7 @@ D. 解压
       | :set nonu    | 取消行号显示                         |
       | :n           | 定位到第n行, 如 :10 就是定位到第10行 |
 
-​     <img src="assets/image-20210811194627474.png" alt="image-20210811194627474" style="zoom: 80%;" />
+​     ![img](assets/image-20210811194627474.png)
 
 ​
 

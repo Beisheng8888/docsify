@@ -518,7 +518,7 @@ MySQL启动起来之后，我们就可以测试一下登录操作，但是我们
 
 当然我们也可以使用安装在windows系统中的sqlyog或者Navicat来远程连接linux上的MySQL。
 
-![img](assets/image-20210815013909486.png"  )
+![img](assets/image-20210815013909486.png)
 
 
 

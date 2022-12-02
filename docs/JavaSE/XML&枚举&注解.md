@@ -150,8 +150,6 @@
 
   1. 我们可以通过网站：https://dom4j.github.io/ 去下载dom4j
 
-     今天的资料中已经提供,我们不用再单独下载了,直接使用即可
-
   2. 将提供好的dom4j-1.6.1.zip解压,找到里面的dom4j-1.6.1.jar
 
   3. 在idea中当前模块下新建一个libs文件夹,将jar包复制到文件夹中
@@ -260,7 +258,7 @@
           //5.遍历集合,得到每一个student标签
           for (Element element : studentElements) {
               //element依次表示每一个student标签
-    
+
               //获取id这个属性
               Attribute attribute = element.attribute("id");
               //获取id的属性值
@@ -432,7 +430,7 @@
 
     定义一个属性的格式为：<!ATTLIST 元素名称 属性名称 属性的类型 属性的约束>
     属性的类型：
-    ​	CDATA类型：普通的字符串     
+    ​	CDATA类型：普通的字符串
 
     属性的约束:
 
@@ -518,7 +516,7 @@
                                 <element name = "name" type = "string"></element>
                                 <element name = "age" type = "string"></element>
                             </sequence>
-                            
+
                         </complexType>
                     </element>
                 </sequence>
@@ -584,16 +582,16 @@
                                 <element name = "name" type = "string"></element>
                                 <element name = "age" type = "string"></element>
                             </sequence>
-                            
+
                             <!--定义属性，required( 必须的)/optional( 可选的)-->
                             <attribute name="id" type="string" use="required"></attribute>
                         </complexType>
-                        
+
                     </element>
                 </sequence>
             </complexType>
         </element>
-        
+
     </schema>
 
     <?xml version="1.0" encoding="UTF-8" ?>
@@ -623,7 +621,7 @@
 + 格式
 
   ```java
-  public enum s {   
+  public enum s {
   	枚举项1,枚举项2,枚举项3;
   }
   注意: 定义枚举类要用关键字enum
@@ -699,12 +697,12 @@
 
       //空参构造
       //private Season(){}
-    
+
       //有参构造
       private Season(String name){
           this.name = name;
       }
-    
+
       //抽象方法
       public abstract void show();
   }
@@ -722,14 +720,14 @@
             枚举项的用法比较特殊：枚举("");
           7.枚举类也可以有抽象方法，但是枚举项必须重写该方法
       */
-    
+
           //第二个特点的演示
           //我们可以通过"枚举类名.枚举项名称"去访问指定的枚举项
           System.out.println(Season.SPRING);
           System.out.println(Season.SUMMER);
           System.out.println(Season.AUTUMN);
           System.out.println(Season.WINTER);
-    
+
           //第三个特点的演示
           //每一个枚举项其实就是该枚举的一个对象
           Season spring = Season.SPRING;

@@ -103,12 +103,12 @@ public class MongoTest {
     public void saveTest(){
         /*for (int i = 0; i < 10; i++) {
             ApAssociateWords apAssociateWords = new ApAssociateWords();
-            apAssociateWords.setAssociateWords("黑马头条");
+            apAssociateWords.setAssociateWords("123");
             apAssociateWords.setCreatedTime(new Date());
             mongoTemplate.save(apAssociateWords);
         }*/
         ApAssociateWords apAssociateWords = new ApAssociateWords();
-        apAssociateWords.setAssociateWords("黑马直播");
+        apAssociateWords.setAssociateWords("123");
         apAssociateWords.setCreatedTime(new Date());
         mongoTemplate.save(apAssociateWords);
 
@@ -124,7 +124,7 @@ public class MongoTest {
     //条件查询
     @Test
     public void testQuery(){
-        Query query = Query.query(Criteria.where("associateWords").is("黑马头条"))
+        Query query = Query.query(Criteria.where("associateWords").is("123"))
                 .with(Sort.by(Sort.Direction.DESC,"createdTime"));
         List<ApAssociateWords> apAssociateWordsList = mongoTemplate.find(query, ApAssociateWords.class);
         System.out.println(apAssociateWordsList);
@@ -132,7 +132,7 @@ public class MongoTest {
 
     @Test
     public void testDel(){
-        mongoTemplate.remove(Query.query(Criteria.where("associateWords").is("黑马头条")),ApAssociateWords.class);
+        mongoTemplate.remove(Query.query(Criteria.where("associateWords").is("123")),ApAssociateWords.class);
     }
 }
 ```
@@ -241,7 +241,7 @@ public class MongoDaoTest {
 @Test
 public void saveTest(){
     ApAssociateWords apAssociateWords = new ApAssociateWords();
-    apAssociateWords.setAssociateWords("黑马直播");
+    apAssociateWords.setAssociateWords("123");
     apAssociateWords.setCreatedTime(new Date());
     associateDao.save(apAssociateWords);
 }
@@ -291,7 +291,7 @@ public void findInterPage(){
     Pageable pageable
         = PageRequest.of(1,5,Sort.by(Sort.Direction.ASC,"createdTime"));
     Page<ApAssociateWords> page
-        = associateDao.findByAssociateWordsStartsWith("黑马", pageable);
+        = associateDao.findByAssociateWordsStartsWith("456", pageable);
     //获取总记录数
     long totalElements = page.getTotalElements();
     //获取总页数
