@@ -31,7 +31,7 @@ describe('router/history/base', () => {
     });
 
     test('toURL with double dot', () => {
-      const url = history.toURL('../README.md', {}, '/zh-ch/');
+      const url = history.toURL('../README11111.md', {}, '/zh-ch/');
 
       expect(url).toBe('/README');
     });

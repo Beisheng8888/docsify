@@ -1,8 +1,12 @@
-![logo](_media/java_icon.svg)
+## 🎁readme
 
-# 北省的Java文档 <small>1.0.8</small>
+> 🍬 书到用时方恨少。
 
-> 先选一个你喜欢的主题吧
+## 📚简介
+
+这里记录了 从Java基础、JavaSE、JavaWeb、基础框架、微服务框架、面试的笔记。
+
+## 🍑这里也可以切换主题
 
 <div class="demo-theme-preview" >
   <a data-theme="theme-simple">simple</a>
@@ -37,11 +41,3 @@
     });
   };
 </script>
-
-
-
-[博客](http://anqi520.com)
-[GitHub](https://github.com/Beisheng8888/docsify)
-[开始](#🎁readme)
-
-
