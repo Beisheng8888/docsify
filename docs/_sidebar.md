@@ -58,6 +58,7 @@
   - [Linux-01](必会工具/Linux-01.md)
   - [Linux-02](必会工具/Linux-02.md)
   - [Redis](必会工具/Redis.md)
+  - [MongoDB](必会工具/MongoDB.md)
   - [Freemarker&MiniO](必会工具/freemarker&Minio.md)
   - [Kafka](必会工具/Kafka.md)
   - [Xxl-Job](必会工具/xxl-Job.md)
