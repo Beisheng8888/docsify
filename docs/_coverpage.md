@@ -2,7 +2,7 @@
 
 # 北省的Java开发文档 <small>1.1.8</small>
 
-> 先选一个你喜欢的主题吧
+> 🌈先选一个你喜欢的主题吧
 
 <div class="demo-theme-preview" >
   <a data-theme="theme-simple">simple</a>
