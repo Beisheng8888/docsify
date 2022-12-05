@@ -78,12 +78,12 @@ describe('core/render/tpl', () => {
         level: 2,
         slug: '#/cover?id=test',
         title:
-          '<img src="/docs/_media/java.ico" data-origin="/_media/java.ico" alt="ico">Test',
+          '<img src="/docs/_media/favicon.ico" data-origin="/_media/favicon.ico" alt="ico">Test',
       },
     ]);
 
     expect(result).toBe(
-      `<ul class="app-sub-sidebar"><li><a class="section-link" href="#/cover?id=basic-usage" title="Basic usage"><span style="color:red">Basic usage</span></a></li><li><a class="section-link" href="#/cover?id=custom-background" title="Custom background">Custom background</a></li><li><a class="section-link" href="#/cover?id=test" title="Test"><img src="/docs/_media/java.ico" data-origin="/_media/favicon.ico" alt="ico">Test</a></li></ul>`
+      `<ul class="app-sub-sidebar"><li><a class="section-link" href="#/cover?id=basic-usage" title="Basic usage"><span style="color:red">Basic usage</span></a></li><li><a class="section-link" href="#/cover?id=custom-background" title="Custom background">Custom background</a></li><li><a class="section-link" href="#/cover?id=test" title="Test"><img src="/docs/_media/favicon.ico" data-origin="/_media/favicon.ico" alt="ico">Test</a></li></ul>`
     );
   });
 });

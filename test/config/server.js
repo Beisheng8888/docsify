@@ -34,7 +34,6 @@ function startServer(options = {}, cb = Function.prototype) {
       baseDir: path.resolve(__dirname, '../'),
       routes: {
         '/docs': path.resolve(__dirname, '../../docs'),
-        '/docs/changelog.md': './CHANGELOG.md',
         '/lib': path.resolve(__dirname, '../../lib'),
         '/node_modules': path.resolve(__dirname, '../../node_modules'),
       },
