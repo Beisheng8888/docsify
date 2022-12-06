@@ -59,6 +59,18 @@
 
 [📙参考API](http://anqi520.com:3000/#/)
 
+-------------------------------------------------------------------------------
+
+## 🚁安装
+
+本地运行
+> npm run bootstrap && npm run dev
+
+Linux部署
+> npm run bootstrap
+
+> nohup npm run dev </dev/null > scriptresults.log 2> scripterror.log & exit
+
 
 -------------------------------------------------------------------------------
 
